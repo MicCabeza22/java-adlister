@@ -4,10 +4,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello")
-public class HelloWorldServlet extends HttpServlet {
+@WebServlet(name = "CountServlet", urlPatterns = "/count")
+public class CountServlet extends HttpServlet {
+    private int pageCount;
+
+    public void init(){
+        pageCount = 0;
+    }
+
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        res.getWriter().println("Hello, World!");
+        pageCount++;
+        res.getWriter().println("Page visited " + pageCount + " time(s)");
     }
 }
-
