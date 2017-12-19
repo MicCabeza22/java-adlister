@@ -7,15 +7,15 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="partials/navbar.jsp" %>
-<%@ include file="partials/stylesheet.jsp"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title><%= "Login" %></title>
+        <%@ include file="partials/head.jsp" %>
     </head>
     <body>
+        <%@ include file="partials/navbar.jsp" %>
         <form method="POST" action="login.jsp">
             <label for="username">Username</label>
             <input id="username" name="username" type="text">
