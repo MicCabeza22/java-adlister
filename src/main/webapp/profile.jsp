@@ -17,5 +17,13 @@
     <body>
         <%@ include file="partials/navbar.jsp" %>
         <h1>My Profile</h1>
+        <p>(insert .jpg)</p>
+        <p>Sample biography</p>
+
+        <ul>
+            <li>Ad 1</li>
+            <li>Ad 2</li>
+            <li>Ad 3</li>
+        </ul>
     </body>
 </html>
