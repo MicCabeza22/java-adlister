@@ -31,7 +31,7 @@ public class RegisterServlet extends HttpServlet {
             user.setUsername(username);
             user.setEmail(email);
             user.setPassword(password);
-            request.getSession().setAttribute("user", username);
+            request.getSession().setAttribute("user", user);
             response.sendRedirect("/profile");
         } else {
             response.sendRedirect("/register");
